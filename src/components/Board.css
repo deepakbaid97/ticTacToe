@@ -1,0 +1,16 @@
+.board{
+    display: flex;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.light{
+    background-color: aliceblue;
+}
+
+.dark{
+    background-color: rgb(45, 45, 45);
+}
