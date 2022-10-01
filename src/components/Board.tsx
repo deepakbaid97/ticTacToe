@@ -1,8 +1,6 @@
 import { ReactElement } from 'react';
 import "./Board.css";
 import Box from './Box';
-import Piece from './piece';
-
 interface Board {
     size:number
 }
