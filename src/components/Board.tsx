@@ -11,7 +11,7 @@ const Board = (props:Board) => {
     for (let i = 0; i < props.size; i++){
         const boxesRow:ReactElement[] = [];
         for (let j = 0; j < props.size; j++){
-            boxesRow.push(<Box color={((i + j) % 2 ? "light": "dark")} Piece={<Piece/>}/>)
+            boxesRow.push(<Box color={((i + j) % 2 ? "light": "dark")} />)
         }
         boxes.push(<div>{boxesRow}</div>)
     }
