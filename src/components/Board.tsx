@@ -1,5 +1,7 @@
 import { ReactElement } from 'react';
 import "./Board.css";
+import Box from './Box';
+import Piece from './piece';
 
 interface Board {
     size:number
@@ -11,27 +13,13 @@ const Board = (props:Board) => {
     for (let i = 0; i < props.size; i++){
         const boxesRow:ReactElement[] = [];
         for (let j = 0; j < props.size; j++){
-            boxesRow.push(<Box color={((i + j) % 2 ? "light": "dark")}/>)
+            boxesRow.push(<Box color={((i + j) % 2 ? "light": "dark")} Piece={<Piece/>}/>)
         }
         boxes.push(<div>{boxesRow}</div>)
     }
     return (
         <div className='board'>
             {boxes}
-        </div>
-    );
-}
-
-interface Box {
-    color: string
-    piece?: JSX.IntrinsicElements
-}
-
-const Box = ({color, piece}:Box) => {
-    console.log(typeof piece);
-    return (
-        <div className={`box ${color}`}>
-            
         </div>
     );
 }
