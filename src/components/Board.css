@@ -1,10 +1,15 @@
 .board{
     display: flex;
+    flex-direction: column;
 }
 
 .box {
     width: 100px;
     height: 100px;
+}
+
+.box-row{
+    display: flex;
 }
 
 .light{

@@ -1,11 +1,9 @@
 import React from 'react';
 import './App.css';
 import Board from './components/Board';
-import useHelloStore from './store/data';
 
 
 function App() {
-  const {world, addWorld} = useHelloStore();
   console.log("HI");
   return (
     <div className="App">
